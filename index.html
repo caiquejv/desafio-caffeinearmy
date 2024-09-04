@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", "initial-scale=1.0" />
+    <title>whiteeth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+
+    <header>
+      <div class="header_promo">
+        <a href="">cadastre-se</a>
+        para ganhar 15% na primeira compra
+      </div>
+
+      <!-- NAVMENU -->
+
+      <section class="nav-menu">
+        <nav>
+          <button class="nav-menu_hamburguer">
+            <img src="assets/list.svg" alt="icon-menu-list" />
+           <p class="products-lister">Todos os produtos</p> 
+          </button>
+
+          <img src="assets/logo.svg" alt="Logo" />
+
+          <div class="nav-menu_profile">
+            <button class="button segunda-class">Assinar whiteeth</button>
+
+            <div class="nav-menu_profile icons-list">
+              <button class="icon-button-list">
+                <img src="assets/avatar.svg" alt="logo avatar" />
+              </button>
+              <button class="icon-button-list">
+                <img src="assets/cart.svg" alt="logo cart" />
+              </button>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- BANNER -->
+
+      <section class="banner">
+        <div class="banner-wrapper">
+          <div class="banner-heading">
+            <h1>
+              Cuido do seu sorriso,
+              <br />
+              <i>mas também do planeta</i>
+            </h1>
+            <p>
+              Encontre aqui produtos de higiene bucal orgânicos e refrescantes,
+              com pasta de dente, escova de dente e muito mais!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="banner-mobile"">
+          <div class="image-mobile">
+          <img src="assets/banner-mobile.png" alt="mulher sorrindo">
+          <button class="bottom-1"> Acesse o white</button>
+          <button class="bottom-2">
+            <img src="assets/message.svg" alt="bottom">
+          </button>
+        </div>
+      </div>
+      <div class="overlap-mobile">
+        <span> Cuide do seu sorriso, <br> <i>mas também do planeta</i></span> <p>
+          Encontre aqui produtos de higiene bucal orgânicos e refrescantes,
+          com pasta de dente, escova de dente e muito mais!
+      </div>
+      </section>
+    </header>
+
+    <!--MAIN -->
+
+    <main>
+      <section class="product-list">
+        <h2>Oral Care</h2>
+        <div class="product-list_filter-wrapper">
+          <button class="product-list_filter-wrapper--filter">
+            <img src="assets/filter.svg" alt="filtros" />
+            Filtros
+          </button>
+          <ul class="product-list_filter-wrapper--tags">
+            <li><button class="tag-button">Todos</button></li>
+            <li><button class="tag-button">Pasta de Dente</button></li>
+            <li><button class="tag-button">Escova de Dente</button></li>
+            <li><button class="tag-button">Raspador de Língua</button></li>
+            <li><button class="tag-button">Clareamento</button></li>
+            <li><button class="tag-button">Aparelho ortodôntico</button></li>
+          </ul>
+          <button class="product-list_filter-wrapper--message">
+            <img src="assets/message.svg" alt="message" />
+          </button>
+        </div>
+
+        <div class="product-category">
+          <h3 class="product-category--title">Pasta de Dente</h3>
+
+          <ul class="product-category--list" id="carouselPastaDente">
+          </ul>
+
+        </div>
+
+        <div class="product-category">
+          <h3 class="product-category--title">Escova de dentes</h3>
+
+          <ul class="product-category--list" id="carouselEscovaDente">
+          </ul>
+        </div>
+
+        <div class="product-category">
+          <h3 class="product-category--title">Outros</h3>
+
+          <ul class="product-category--list" id="carouselFioDental">
+           
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+
+    <footer class="footer"> 
+        <img src="assets/footer.png" alt="Imagem pessoas sorrindo" />
+        <div class="footer-2">
+          <section class="newsletter">
+            <p>
+              Quer dicas de hábitos de higiene bucal e ganhar desconto na
+              primeira compra?
+            </p>
+            <form class="new1" action="">
+              <input type="email" placeholder="Digite seu e-mail aqui" />
+              <button type="submit">Enviar</button>
+            </form>
+          </section>
+        </div>
+    </footer> 
+    <script src="script.js"></script>
+  </body>
+</html>
