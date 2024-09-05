@@ -3,25 +3,29 @@ const contentCardsPastaDente = [
     imagem: "assets/pastadente.png",
     titulo: "Hortelã",
     valor: "R$70,00",
-    valorAntigo: null
+    valorAntigo: null,
+    desconto: null
   },
   {
     imagem: "assets/pastadente.png",
     titulo: "Morango",
     valor: "R$50,00",
-    valorAntigo: true
+    valorAntigo: true,
+    desconto: true
   },
   {
     imagem: "assets/pastadente.png",
     titulo: "Uva",
     valor: "R$50,00",
-    valorAntigo: true
+    valorAntigo: true,
+    desconto: true
   },
   {
     imagem: "assets/pastadente.png",
     titulo: "Café",
     valor: "R$50,00",
-    valorAntigo: true
+    valorAntigo: true,
+    desconto: true
   },
 ];
 
@@ -29,17 +33,17 @@ const contentCardsEscovaDente = [
   {
     imagem: "assets/toothbrush.png",
     titulo: "Bamboo",
-    valor: "50,90",
+    valor: "R$50,90",
   },
   {
     imagem: "assets/toothbrush.png",
     titulo: "Mógno",
-    valor: "50,90",
+    valor: "R$50,90",
   },
   {
     imagem: "assets/toothbrush.png",
     titulo: "Carvalho",
-    valor: "50,90",
+    valor: "R$50,90",
   },
 ];
 
@@ -47,12 +51,12 @@ const contentCardsFioDental = [
   {
     imagem: "assets/others.png",
     titulo: "Fio dental",
-    valor: "50,90",
+    valor: "R$50,90",
   },
   {
     imagem: "assets/others.png",
     titulo: "Fio dental",
-    valor: "50,90",
+    valor: "R$50,90",
   },
 ];
 
@@ -82,7 +86,7 @@ contentCardsPastaDente.forEach((item, i) => {
         ${item.valor}
       </div>
       <button class="button-buy">Adicionar ao carrinho</button>
-      <span class="promo">30% off</span>
+      ${item.desconto ? `<span class="promo">30% off</span>` : ``}
       `;
   carouselPastaDente.appendChild(li);
 });
